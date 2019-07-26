@@ -69,7 +69,13 @@ img{
     width:100%;
   }
 
+  .sec2 img:hover{
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+
   .sec2 img{
+    transition-duration: 1s;
     width: 100%;
   }
 
