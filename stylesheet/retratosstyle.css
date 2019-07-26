@@ -1,0 +1,169 @@
+body{
+  background-color: #02010a;
+  font-family: Dancing Script;
+}
+
+header{
+  background-color: #5b7989;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.titulo{
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+a[href="#contenido"]{
+  text-decoration: none;
+}
+
+a{
+  font-size: 1.3em;
+}
+
+img{
+    box-shadow: 2px 2px #02010a;
+}
+
+#blur{
+  filter: blur(10px);
+  width: 100%;
+}
+
+.grises{
+  filter: grayscale(100%);
+}
+
+#sepia{
+  filter: sepia(90%);
+}
+
+/*Soporte para móviles*/
+@media (max-width:900px){
+  #contenido{
+    width: 100%;
+    text-align: center;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    animation: rebote 1s;
+  }
+
+  .secundaria{
+    background-color: #d5c75f;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -2px;
+  }
+
+  .secundaria article{
+    padding: 10px 14px;
+  }
+
+  section article img{
+    width: 100%;
+  }
+
+  #s2 article:last-child{
+    padding-bottom: 15px;
+  }
+
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -23px;
+  }
+
+  footer div{
+    width: 100%;
+    text-align: left;
+    padding-left: 3px;
+  }
+
+  div p img{
+    width: 16px;
+    margin-right: 5px;
+    box-shadow: none;
+  }
+}
+
+@media (min-width:901px){
+  #contenido{
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  header{
+    animation: rebote 1s;
+  }
+
+  .secundaria{
+    background-color: #d5c75f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+
+  section article{
+    width: 33.3%;
+    padding: 0px 14px;
+  }
+
+  section article img{
+    width: 100%;
+  }
+
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3px;
+  }
+
+  footer div{
+    width: 25%;
+    text-align: left;
+  }
+
+  div p img{
+    width: 16px;
+    margin-right: 5px;
+    box-shadow: none;
+  }
+}
+
+@-webkit-keyframes rebote{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+@keyframes rebote{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
